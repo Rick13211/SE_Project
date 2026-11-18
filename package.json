@@ -1,0 +1,21 @@
+{
+  "name": "smart-task-workload-manager",
+  "version": "1.0.0",
+  "description": "Smart Task Allocation and Team Workload Management System",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server.js",
+    "seed": "node backend/scripts/seed.js",
+    "nlp": "python nlp_service/main.py",
+    "test": "node test_suite.js"
+  },
+  "keywords": [
+    "task-allocation",
+    "workload-management",
+    "nlp",
+    "spmp",
+    "srs"
+  ],
+  "author": "Anantam Aftab, Shivam Saurabh, Golu Kumar, Rick Roy",
+  "license": "MIT"
+}

@@ -1,0 +1,712 @@
+{
+  "users": [
+    {
+      "id": "usr_admin",
+      "name": "System Administrator",
+      "email": "admin@demo.com",
+      "password": "$2b$10$UZrg17sQfDLliuMg/GSdKeQ/564IFvoPGrW9LXdMhnjehq7sOl1e.",
+      "role": "ADMIN",
+      "bio": "Platform superuser managing security policies, user privileges, and system audit monitoring.",
+      "skills": [
+        "security",
+        "system design",
+        "linux",
+        "devops"
+      ],
+      "isActive": true,
+      "createdAt": "2026-11-18T08:01:14.158Z"
+    },
+    {
+      "id": "usr_lead",
+      "name": "Alex Morgan (Team Lead)",
+      "email": "lead@demo.com",
+      "password": "$2b$10$UZrg17sQfDLliuMg/GSdKeQ/564IFvoPGrW9LXdMhnjehq7sOl1e.",
+      "role": "TEAM_LEAD",
+      "bio": "Engineering Project Manager leading full-stack cloud and AI product delivery teams.",
+      "skills": [
+        "system design",
+        "microservices",
+        "agile",
+        "rest api",
+        "git"
+      ],
+      "isActive": true,
+      "createdAt": "2026-11-18T08:01:14.159Z"
+    },
+    {
+      "id": "usr_anantam",
+      "name": "Anantam Aftab",
+      "email": "anantam@demo.com",
+      "password": "$2b$10$UZrg17sQfDLliuMg/GSdKeQ/564IFvoPGrW9LXdMhnjehq7sOl1e.",
+      "role": "MEMBER",
+      "bio": "Frontend specialist with deep expertise in React, Next.js, TypeScript, Tailwind CSS, Redux, and modern interactive web dashboards.",
+      "skills": [
+        "react",
+        "next.js",
+        "typescript",
+        "javascript",
+        "html/css",
+        "redux"
+      ],
+      "isActive": true,
+      "createdAt": "2026-11-18T08:01:14.159Z"
+    },
+    {
+      "id": "usr_shivam",
+      "name": "Shivam Saurabh",
+      "email": "shivam@demo.com",
+      "password": "$2b$10$UZrg17sQfDLliuMg/GSdKeQ/564IFvoPGrW9LXdMhnjehq7sOl1e.",
+      "role": "MEMBER",
+      "bio": "Backend developer focused on high-throughput Node.js, Express, Python FastAPI, PostgreSQL, MongoDB, Redis caching, and RESTful API architecture.",
+      "skills": [
+        "node.js",
+        "express",
+        "python",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "rest api",
+        "redis"
+      ],
+      "isActive": true,
+      "createdAt": "2026-11-18T08:01:14.159Z"
+    },
+    {
+      "id": "usr_golu",
+      "name": "Golu Kumar",
+      "email": "golu@demo.com",
+      "password": "$2b$10$UZrg17sQfDLliuMg/GSdKeQ/564IFvoPGrW9LXdMhnjehq7sOl1e.",
+      "role": "MEMBER",
+      "bio": "DevOps & Site Reliability Engineer experienced in Docker containerization, Kubernetes clusters, AWS cloud deployment, Linux administration, and CI/CD automation.",
+      "skills": [
+        "docker",
+        "kubernetes",
+        "aws",
+        "ci/cd",
+        "linux",
+        "git"
+      ],
+      "isActive": true,
+      "createdAt": "2026-11-18T08:01:14.159Z"
+    },
+    {
+      "id": "usr_rick",
+      "name": "Rick Roy",
+      "email": "rick@demo.com",
+      "password": "$2b$10$UZrg17sQfDLliuMg/GSdKeQ/564IFvoPGrW9LXdMhnjehq7sOl1e.",
+      "role": "MEMBER",
+      "bio": "Machine learning and NLP engineer proficient in Python, spaCy, scikit-learn, text mining, automated classification, and data science pipelines.",
+      "skills": [
+        "python",
+        "nlp",
+        "machine learning",
+        "data science",
+        "sql",
+        "rest api"
+      ],
+      "isActive": true,
+      "createdAt": "2026-11-18T08:01:14.159Z"
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj_cloud_platform",
+      "name": "Enterprise Cloud Microservices & Web Platform",
+      "description": "Core microservices backend, real-time workload orchestration, responsive Next.js frontend, and automated container deployment.",
+      "createdById": "usr_lead",
+      "memberIds": [
+        "usr_anantam",
+        "usr_shivam",
+        "usr_golu",
+        "usr_rick"
+      ],
+      "deadline": "2026-12-15T18:00:00.000Z",
+      "createdAt": "2026-11-11T08:01:14.159Z"
+    },
+    {
+      "id": "proj_nlp_analytics",
+      "name": "AI-Powered NLP Recommendation Engine",
+      "description": "Natural language text processing service to extract skill profiles, evaluate developer match scores, and optimize task assignment.",
+      "createdById": "usr_lead",
+      "memberIds": [
+        "usr_anantam",
+        "usr_shivam",
+        "usr_golu",
+        "usr_rick"
+      ],
+      "deadline": "2026-12-28T18:00:00.000Z",
+      "createdAt": "2026-11-13T08:01:14.159Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task_01",
+      "title": "Design Responsive Dashboard Layout & Navigation",
+      "description": "Build modern responsive sidebar, top bar, and role-aware navigation using React and Tailwind CSS.",
+      "projectId": "proj_cloud_platform",
+      "requiredSkill": "react",
+      "effortLevel": "MEDIUM",
+      "effortPoints": 3,
+      "priority": "HIGH",
+      "status": "COMPLETED",
+      "assigneeId": "usr_anantam",
+      "allocationType": "BASELINE_RANDOM",
+      "deadline": "2026-11-10T12:00:00.000Z",
+      "completedAt": "2026-11-09T16:00:00.000Z",
+      "createdById": "usr_lead",
+      "createdAt": "2026-11-08T08:01:14.160Z"
+    },
+    {
+      "id": "task_02",
+      "title": "Setup PostgreSQL Database Schema & Migration Scripts",
+      "description": "Define relational schema tables, foreign key constraints, indexes, and connection pooling for user and task records.",
+      "projectId": "proj_cloud_platform",
+      "requiredSkill": "postgresql",
+      "effortLevel": "MEDIUM",
+      "effortPoints": 3,
+      "priority": "HIGH",
+      "status": "COMPLETED",
+      "assigneeId": "usr_shivam",
+      "allocationType": "BASELINE_RANDOM",
+      "deadline": "2026-11-12T12:00:00.000Z",
+      "completedAt": "2026-11-11T14:30:00.000Z",
+      "createdById": "usr_lead",
+      "createdAt": "2026-11-09T08:01:14.160Z"
+    },
+    {
+      "id": "task_03",
+      "title": "Dockerize Backend Services and Setup Docker Compose",
+      "description": "Create multi-stage production Dockerfiles for Node.js API and Python services with healthchecks.",
+      "projectId": "proj_cloud_platform",
+      "requiredSkill": "docker",
+      "effortLevel": "LOW",
+      "effortPoints": 1,
+      "priority": "MEDIUM",
+      "status": "COMPLETED",
+      "assigneeId": "usr_golu",
+      "allocationType": "BASELINE_RANDOM",
+      "deadline": "2026-11-14T12:00:00.000Z",
+      "completedAt": "2026-11-13T10:00:00.000Z",
+      "createdById": "usr_lead",
+      "createdAt": "2026-11-10T08:01:14.160Z"
+    },
+    {
+      "id": "task_04",
+      "title": "Implement TF-IDF Skill Taxonomy Extractor",
+      "description": "Develop Python module to tokenize free-text developer resumes and match canonical skills.",
+      "projectId": "proj_nlp_analytics",
+      "requiredSkill": "python",
+      "effortLevel": "HIGH",
+      "effortPoints": 5,
+      "priority": "HIGH",
+      "status": "COMPLETED",
+      "assigneeId": "usr_rick",
+      "allocationType": "BASELINE_RANDOM",
+      "deadline": "2026-11-15T12:00:00.000Z",
+      "completedAt": "2026-11-14T18:00:00.000Z",
+      "createdById": "usr_lead",
+      "createdAt": "2026-11-11T08:01:14.160Z"
+    },
+    {
+      "id": "task_05",
+      "title": "Build JWT Authentication Middleware and Refresh Flow",
+      "description": "Implement token validation, role checking, password salting, and secure cookie storage in Express.",
+      "projectId": "proj_cloud_platform",
+      "requiredSkill": "node.js",
+      "effortLevel": "MEDIUM",
+      "effortPoints": 3,
+      "priority": "CRITICAL",
+      "status": "IN_PROGRESS",
+      "assigneeId": "usr_shivam",
+      "allocationType": "BASELINE_RANDOM",
+      "deadline": "2026-11-20T18:00:00.000Z",
+      "createdById": "usr_lead",
+      "createdAt": "2026-11-14T08:01:14.160Z"
+    },
+    {
+      "id": "task_06",
+      "title": "Configure GitHub Actions CI/CD Automated Test Pipeline",
+      "description": "Setup continuous integration runner to execute linting, unit tests, and build checks on pull requests.",
+      "projectId": "proj_cloud_platform",
+      "requiredSkill": "ci/cd",
+      "effortLevel": "MEDIUM",
+      "effortPoints": 3,
+      "priority": "HIGH",
+      "status": "IN_PROGRESS",
+      "assigneeId": "usr_golu",
+      "allocationType": "BASELINE_RANDOM",
+      "deadline": "2026-11-21T18:00:00.000Z",
+      "createdById": "usr_lead",
+      "createdAt": "2026-11-15T08:01:14.160Z"
+    },
+    {
+      "id": "task_07",
+      "title": "Create Interactive Workload Distribution Charts",
+      "description": "Render dynamic bar charts and effort meter using Chart.js / SVG for Team Lead dashboard.",
+      "projectId": "proj_cloud_platform",
+      "requiredSkill": "react",
+      "effortLevel": "LOW",
+      "effortPoints": 1,
+      "priority": "MEDIUM",
+      "status": "COMPLETED",
+      "assigneeId": "usr_anantam",
+      "allocationType": "BASELINE_RANDOM",
+      "deadline": "2026-11-22T18:00:00.000Z",
+      "createdById": "usr_lead",
+      "createdAt": "2026-11-16T08:01:14.160Z",
+      "updatedAt": "2026-11-18T08:09:57.348Z",
+      "completedAt": "2026-11-18T08:09:57.345Z"
+    },
+    {
+      "id": "task_08",
+      "title": "Develop Real-Time Cosine Similarity NLP Matcher",
+      "description": "Implement mathematical vector matching comparing developer skill text against incoming task specifications.",
+      "projectId": "proj_nlp_analytics",
+      "requiredSkill": "nlp",
+      "effortLevel": "HIGH",
+      "effortPoints": 5,
+      "priority": "HIGH",
+      "status": "COMPLETED",
+      "assigneeId": "usr_rick",
+      "allocationType": "BASELINE_RANDOM",
+      "deadline": "2026-11-25T18:00:00.000Z",
+      "createdById": "usr_lead",
+      "createdAt": "2026-11-17T08:01:14.160Z",
+      "assignedAt": "2026-11-18T08:03:13.073Z",
+      "updatedAt": "2026-11-18T08:03:46.285Z",
+      "completedAt": "2026-11-18T08:03:46.282Z"
+    },
+    {
+      "id": "task_09",
+      "title": "Build Member Reassignment Request Modal & State Management",
+      "description": "Frontend component allowing team members to submit task reassignment requests with mandatory justification.",
+      "projectId": "proj_cloud_platform",
+      "requiredSkill": "react",
+      "effortLevel": "MEDIUM",
+      "effortPoints": 3,
+      "priority": "MEDIUM",
+      "status": "TODO",
+      "assigneeId": "usr_shivam",
+      "allocationType": "BASELINE_RANDOM",
+      "deadline": "2026-11-26T18:00:00.000Z",
+      "createdById": "usr_lead",
+      "createdAt": "2026-11-17T08:01:14.160Z",
+      "assignedAt": "2026-11-18T08:03:22.557Z",
+      "updatedAt": "2026-11-18T08:03:22.561Z"
+    },
+    {
+      "id": "task_10",
+      "title": "Deploy Kubernetes Deployment Manifests & Ingress Controller",
+      "description": "Write K8s deployment, service, configmap, and ingress specifications for cluster scalability.",
+      "projectId": "proj_cloud_platform",
+      "requiredSkill": "kubernetes",
+      "effortLevel": "HIGH",
+      "effortPoints": 5,
+      "priority": "HIGH",
+      "status": "COMPLETED",
+      "assigneeId": "usr_anantam",
+      "allocationType": "BASELINE_RANDOM",
+      "deadline": "2026-11-27T18:00:00.000Z",
+      "createdById": "usr_lead",
+      "createdAt": "2026-11-18T08:01:14.160Z",
+      "assignedAt": "2026-11-18T08:03:22.546Z",
+      "updatedAt": "2026-11-18T08:09:58.663Z",
+      "completedAt": "2026-11-18T08:09:58.661Z"
+    },
+    {
+      "id": "task_11",
+      "title": "Optimize Database Query Indexes and Connection Pool",
+      "description": "Benchmark slow queries, add composite indexes on task assignment logs, and optimize query latency.",
+      "projectId": "proj_cloud_platform",
+      "requiredSkill": "postgresql",
+      "effortLevel": "LOW",
+      "effortPoints": 1,
+      "priority": "LOW",
+      "status": "TODO",
+      "assigneeId": "usr_golu",
+      "allocationType": "BASELINE_RANDOM",
+      "deadline": "2026-11-29T18:00:00.000Z",
+      "createdById": "usr_lead",
+      "createdAt": "2026-11-18T08:01:14.160Z",
+      "assignedAt": "2026-11-18T08:03:22.569Z",
+      "updatedAt": "2026-11-18T08:03:22.572Z"
+    }
+  ],
+  "assignment_history": [
+    {
+      "id": "hist_01",
+      "taskId": "task_01",
+      "taskTitle": "Design Responsive Dashboard Layout & Navigation",
+      "projectId": "proj_cloud_platform",
+      "assigneeId": "usr_anantam",
+      "assigneeName": "Anantam Aftab",
+      "allocationType": "BASELINE_RANDOM",
+      "reason": "Automated balanced baseline allocation (skill-independent).",
+      "effortPoints": 3,
+      "timestamp": "2026-11-08T08:01:14.160Z"
+    },
+    {
+      "id": "hist_02",
+      "taskId": "task_02",
+      "taskTitle": "Setup PostgreSQL Database Schema & Migration Scripts",
+      "projectId": "proj_cloud_platform",
+      "assigneeId": "usr_shivam",
+      "assigneeName": "Shivam Saurabh",
+      "allocationType": "BASELINE_RANDOM",
+      "reason": "Automated balanced baseline allocation (skill-independent).",
+      "effortPoints": 3,
+      "timestamp": "2026-11-09T08:01:14.160Z"
+    },
+    {
+      "id": "hist_03",
+      "taskId": "task_05",
+      "taskTitle": "Build JWT Authentication Middleware and Refresh Flow",
+      "projectId": "proj_cloud_platform",
+      "assigneeId": "usr_shivam",
+      "assigneeName": "Shivam Saurabh",
+      "allocationType": "BASELINE_RANDOM",
+      "reason": "Automated balanced baseline allocation (skill-independent).",
+      "effortPoints": 3,
+      "timestamp": "2026-11-14T08:01:14.160Z"
+    },
+    {
+      "id": "hist_74753287-2fd2-4435-b97a-49c6d79facef",
+      "taskId": "task_08",
+      "taskTitle": "Develop Real-Time Cosine Similarity NLP Matcher",
+      "projectId": "proj_nlp_analytics",
+      "assigneeId": "usr_rick",
+      "assigneeName": "Rick Roy",
+      "allocationType": "BASELINE_RANDOM",
+      "reason": "Automated balanced baseline allocation (skill-independent).",
+      "effortPoints": 5,
+      "timestamp": "2026-11-18T08:03:13.081Z"
+    },
+    {
+      "id": "hist_97cac4a5-9d74-489c-8c45-eb2fb4f22fd8",
+      "taskId": "task_10",
+      "taskTitle": "Deploy Kubernetes Deployment Manifests & Ingress Controller",
+      "projectId": "proj_cloud_platform",
+      "assigneeId": "usr_anantam",
+      "assigneeName": "Anantam Aftab",
+      "allocationType": "BASELINE_RANDOM",
+      "reason": "Automated balanced baseline allocation (skill-independent).",
+      "effortPoints": 5,
+      "timestamp": "2026-11-18T08:03:22.551Z"
+    },
+    {
+      "id": "hist_1167d4f5-94d5-4c0c-8061-ac5ca4f9ac09",
+      "taskId": "task_09",
+      "taskTitle": "Build Member Reassignment Request Modal & State Management",
+      "projectId": "proj_cloud_platform",
+      "assigneeId": "usr_shivam",
+      "assigneeName": "Shivam Saurabh",
+      "allocationType": "BASELINE_RANDOM",
+      "reason": "Automated balanced baseline allocation (skill-independent).",
+      "effortPoints": 3,
+      "timestamp": "2026-11-18T08:03:22.564Z"
+    },
+    {
+      "id": "hist_47e332d8-c2fb-419b-b454-3ec753cffa0d",
+      "taskId": "task_11",
+      "taskTitle": "Optimize Database Query Indexes and Connection Pool",
+      "projectId": "proj_cloud_platform",
+      "assigneeId": "usr_golu",
+      "assigneeName": "Golu Kumar",
+      "allocationType": "BASELINE_RANDOM",
+      "reason": "Automated balanced baseline allocation (skill-independent).",
+      "effortPoints": 1,
+      "timestamp": "2026-11-18T08:03:22.578Z"
+    }
+  ],
+  "reassignment_requests": [],
+  "performance_ratings": [
+    {
+      "id": "rate_01",
+      "taskId": "task_01",
+      "taskTitle": "Design Responsive Dashboard Layout & Navigation",
+      "userId": "usr_anantam",
+      "skill": "react",
+      "rating": "ABOVE_AVERAGE",
+      "feedback": "Excellent UI responsiveness, clean Tailwind code, and delivered ahead of schedule.",
+      "ratedById": "usr_lead",
+      "createdAt": "2026-11-09T08:01:14.160Z"
+    },
+    {
+      "id": "rate_02",
+      "taskId": "task_02",
+      "taskTitle": "Setup PostgreSQL Database Schema & Migration Scripts",
+      "userId": "usr_shivam",
+      "skill": "postgresql",
+      "rating": "ABOVE_AVERAGE",
+      "feedback": "Well-structured schema with robust foreign key constraints and clean migrations.",
+      "ratedById": "usr_lead",
+      "createdAt": "2026-11-10T08:01:14.160Z"
+    },
+    {
+      "id": "rate_03",
+      "taskId": "task_03",
+      "taskTitle": "Dockerize Backend Services and Setup Docker Compose",
+      "userId": "usr_golu",
+      "skill": "docker",
+      "rating": "AVERAGE",
+      "feedback": "Good containerization setup, met all specifications.",
+      "ratedById": "usr_lead",
+      "createdAt": "2026-11-11T08:01:14.160Z"
+    },
+    {
+      "id": "rate_04",
+      "taskId": "task_04",
+      "taskTitle": "Implement TF-IDF Skill Taxonomy Extractor",
+      "userId": "usr_rick",
+      "skill": "python",
+      "rating": "ABOVE_AVERAGE",
+      "feedback": "High accuracy NLP skill extraction with great test coverage.",
+      "ratedById": "usr_lead",
+      "createdAt": "2026-11-12T08:01:14.160Z"
+    }
+  ],
+  "system_logs": [
+    {
+      "id": "log_seed",
+      "userId": "usr_admin",
+      "action": "SYSTEM_SEEDED",
+      "details": {
+        "usersCount": 6,
+        "tasksCount": 11
+      },
+      "timestamp": "2026-11-18T08:01:14.160Z"
+    },
+    {
+      "id": "log_1794988961973_1485w",
+      "userId": "usr_lead",
+      "action": "USER_LOGGED_IN",
+      "details": {
+        "email": "lead@demo.com",
+        "role": "TEAM_LEAD"
+      },
+      "timestamp": "2026-11-18T08:02:41.973Z"
+    },
+    {
+      "id": "log_1794988993087_s5f1n",
+      "userId": "usr_lead",
+      "action": "BASELINE_ALLOCATION_EXECUTED",
+      "details": {
+        "projectId": "proj_nlp_analytics",
+        "tasksCount": 1,
+        "distribution": {
+          "Anantam Aftab": {
+            "userId": "usr_anantam",
+            "totalPoints": 1,
+            "newTasksAssigned": 0
+          },
+          "Shivam Saurabh": {
+            "userId": "usr_shivam",
+            "totalPoints": 3,
+            "newTasksAssigned": 0
+          },
+          "Golu Kumar": {
+            "userId": "usr_golu",
+            "totalPoints": 3,
+            "newTasksAssigned": 0
+          },
+          "Rick Roy": {
+            "userId": "usr_rick",
+            "totalPoints": 5,
+            "newTasksAssigned": 1
+          }
+        }
+      },
+      "timestamp": "2026-11-18T08:03:13.087Z"
+    },
+    {
+      "id": "log_1794989002583_r6x5n",
+      "userId": "usr_lead",
+      "action": "BASELINE_ALLOCATION_EXECUTED",
+      "details": {
+        "projectId": "proj_cloud_platform",
+        "tasksCount": 3,
+        "distribution": {
+          "Anantam Aftab": {
+            "userId": "usr_anantam",
+            "totalPoints": 6,
+            "newTasksAssigned": 1
+          },
+          "Shivam Saurabh": {
+            "userId": "usr_shivam",
+            "totalPoints": 6,
+            "newTasksAssigned": 1
+          },
+          "Golu Kumar": {
+            "userId": "usr_golu",
+            "totalPoints": 4,
+            "newTasksAssigned": 1
+          },
+          "Rick Roy": {
+            "userId": "usr_rick",
+            "totalPoints": 5,
+            "newTasksAssigned": 0
+          }
+        }
+      },
+      "timestamp": "2026-11-18T08:03:22.583Z"
+    },
+    {
+      "id": "log_1794989014647_926ry",
+      "userId": "usr_lead",
+      "action": "USER_LOGGED_IN",
+      "details": {
+        "email": "lead@demo.com",
+        "role": "TEAM_LEAD"
+      },
+      "timestamp": "2026-11-18T08:03:34.647Z"
+    },
+    {
+      "id": "log_1794989017960_gtyxy",
+      "userId": "usr_rick",
+      "action": "USER_LOGGED_IN",
+      "details": {
+        "email": "rick@demo.com",
+        "role": "MEMBER"
+      },
+      "timestamp": "2026-11-18T08:03:37.960Z"
+    },
+    {
+      "id": "log_1794989022532_ufqsv",
+      "userId": "usr_rick",
+      "action": "TASK_STATUS_CHANGED",
+      "details": {
+        "taskId": "task_08",
+        "from": "TODO",
+        "to": "IN_PROGRESS"
+      },
+      "timestamp": "2026-11-18T08:03:42.532Z"
+    },
+    {
+      "id": "log_1794989024439_x68ow",
+      "userId": "usr_rick",
+      "action": "TASK_STATUS_CHANGED",
+      "details": {
+        "taskId": "task_08",
+        "from": "IN_PROGRESS",
+        "to": "IN_REVIEW"
+      },
+      "timestamp": "2026-11-18T08:03:44.439Z"
+    },
+    {
+      "id": "log_1794989026288_q414z",
+      "userId": "usr_rick",
+      "action": "TASK_STATUS_CHANGED",
+      "details": {
+        "taskId": "task_08",
+        "from": "IN_REVIEW",
+        "to": "COMPLETED"
+      },
+      "timestamp": "2026-11-18T08:03:46.288Z"
+    },
+    {
+      "id": "log_1794989033111_hmhsw",
+      "userId": "usr_lead",
+      "action": "USER_LOGGED_IN",
+      "details": {
+        "email": "lead@demo.com",
+        "role": "TEAM_LEAD"
+      },
+      "timestamp": "2026-11-18T08:03:53.111Z"
+    },
+    {
+      "id": "log_1794989362464_1nqzp",
+      "userId": "usr_rick",
+      "action": "USER_LOGGED_IN",
+      "details": {
+        "email": "rick@demo.com",
+        "role": "MEMBER"
+      },
+      "timestamp": "2026-11-18T08:09:22.464Z"
+    },
+    {
+      "id": "log_1794989380400_ed9ii",
+      "userId": "usr_anantam",
+      "action": "USER_LOGGED_IN",
+      "details": {
+        "email": "anantam@demo.com",
+        "role": "MEMBER"
+      },
+      "timestamp": "2026-11-18T08:09:40.400Z"
+    },
+    {
+      "id": "log_1794989387229_ijbzu",
+      "userId": "usr_anantam",
+      "action": "TASK_STATUS_CHANGED",
+      "details": {
+        "taskId": "task_10",
+        "from": "TODO",
+        "to": "IN_PROGRESS"
+      },
+      "timestamp": "2026-11-18T08:09:47.229Z"
+    },
+    {
+      "id": "log_1794989392382_7n2vg",
+      "userId": "usr_anantam",
+      "action": "TASK_STATUS_CHANGED",
+      "details": {
+        "taskId": "task_07",
+        "from": "IN_PROGRESS",
+        "to": "IN_REVIEW"
+      },
+      "timestamp": "2026-11-18T08:09:52.382Z"
+    },
+    {
+      "id": "log_1794989394365_3sb7s",
+      "userId": "usr_anantam",
+      "action": "TASK_STATUS_CHANGED",
+      "details": {
+        "taskId": "task_10",
+        "from": "IN_PROGRESS",
+        "to": "IN_REVIEW"
+      },
+      "timestamp": "2026-11-18T08:09:54.365Z"
+    },
+    {
+      "id": "log_1794989397353_bz7as",
+      "userId": "usr_anantam",
+      "action": "TASK_STATUS_CHANGED",
+      "details": {
+        "taskId": "task_07",
+        "from": "IN_REVIEW",
+        "to": "COMPLETED"
+      },
+      "timestamp": "2026-11-18T08:09:57.353Z"
+    },
+    {
+      "id": "log_1794989398667_z6880",
+      "userId": "usr_anantam",
+      "action": "TASK_STATUS_CHANGED",
+      "details": {
+        "taskId": "task_10",
+        "from": "IN_REVIEW",
+        "to": "COMPLETED"
+      },
+      "timestamp": "2026-11-18T08:09:58.667Z"
+    },
+    {
+      "id": "log_1794989401509_s96qx",
+      "userId": "usr_lead",
+      "action": "USER_LOGGED_IN",
+      "details": {
+        "email": "lead@demo.com",
+        "role": "TEAM_LEAD"
+      },
+      "timestamp": "2026-11-18T08:10:01.509Z"
+    },
+    {
+      "id": "log_1794990561318_pw4mo",
+      "userId": "usr_lead",
+      "action": "USER_LOGGED_IN",
+      "details": {
+        "email": "lead@demo.com",
+        "role": "TEAM_LEAD"
+      },
+      "timestamp": "2026-11-18T08:29:21.319Z"
+    }
+  ]
+}

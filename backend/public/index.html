@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Task Allocation & Workload Management System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            brand: {
+              50: '#f0f7ff',
+              100: '#e0effe',
+              200: '#bae0fd',
+              500: '#0284c7',
+              600: '#0369a1',
+              700: '#075985',
+              900: '#0c4a6e',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased min-h-screen flex flex-col">
+
+  <!-- TOP HEADER / NAV -->
+  <header class="bg-slate-800/80 backdrop-blur-md border-b border-slate-700/60 sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      
+      <!-- Logo & System Title -->
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-500 to-indigo-600 flex items-center justify-center text-white font-bold shadow-lg shadow-sky-500/20">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+          </svg>
+        </div>
+        <div>
+          <div class="font-bold text-base sm:text-lg tracking-tight bg-gradient-to-r from-white via-slate-200 to-sky-300 bg-clip-text text-transparent">
+            SmartTask Allocation System
+          </div>
+          <div class="text-xs text-slate-400 hidden sm:block">Workload Distribution & NLP Matching Engine</div>
+        </div>
+      </div>
+
+      <!-- Quick Role Switcher (For seamless grading / presentation) -->
+      <div id="demoSwitcher" class="hidden lg:flex items-center gap-1.5 bg-slate-900/80 border border-slate-700/80 px-2 py-1 rounded-xl text-xs">
+        <span class="text-slate-400 font-mono text-[10px] uppercase tracking-wider px-1">Switch Persona:</span>
+        <button onclick="app.quickLogin('lead@demo.com')" class="px-2 py-1 rounded-lg bg-sky-500/10 text-sky-300 hover:bg-sky-500/20 font-medium transition">Team Lead</button>
+        <button onclick="app.quickLogin('anantam@demo.com')" class="px-2 py-1 rounded-lg bg-emerald-500/10 text-emerald-300 hover:bg-emerald-500/20 font-medium transition">Anantam (React)</button>
+        <button onclick="app.quickLogin('shivam@demo.com')" class="px-2 py-1 rounded-lg bg-indigo-500/10 text-indigo-300 hover:bg-indigo-500/20 font-medium transition">Shivam (Node)</button>
+        <button onclick="app.quickLogin('rick@demo.com')" class="px-2 py-1 rounded-lg bg-amber-500/10 text-amber-300 hover:bg-amber-500/20 font-medium transition">Rick (NLP)</button>
+        <button onclick="app.quickLogin('admin@demo.com')" class="px-2 py-1 rounded-lg bg-purple-500/10 text-purple-300 hover:bg-purple-500/20 font-medium transition">Admin</button>
+      </div>
+
+      <!-- Right User Actions -->
+      <div id="userNavSection" class="flex items-center gap-3">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </header>
+
+  <!-- TOAST CONTAINER -->
+  <div id="toastContainer" class="fixed bottom-5 right-5 z-50 flex flex-col gap-2 max-w-sm"></div>
+
+  <!-- MAIN VIEWPORT -->
+  <main id="appContainer" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex-1 w-full">
+    <!-- Rendered dynamically by app.js: Login/Register, Team Lead Dashboard, Member Dashboard, or Admin Dashboard -->
+    <div class="flex items-center justify-center py-24">
+      <div class="flex flex-col items-center gap-3 text-slate-400">
+        <div class="w-8 h-8 border-2 border-sky-500 border-t-transparent rounded-full animate-spin"></div>
+        <p class="text-sm font-mono">Initializing Task Management Platform...</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- MODALS CONTAINER -->
+  <div id="modalContainer" class="relative z-50"></div>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-800/40 border-t border-slate-800 py-4 text-xs text-slate-400 text-center">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
+      <div>SPMP & SRS Compliant Intelligent Task Management & Allocation Platform</div>
+      <div class="text-slate-400 font-mono text-[11px]">Anantam Aftab • Shivam Saurabh • Golu Kumar • Rick Roy</div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
